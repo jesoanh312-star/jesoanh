@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web đơn giản</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f2f2f2;
+      margin-top: 100px;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: blue;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Xin chào 👋</h1>
+    <p>Đây là website đơn giản</p>
+
+    <button onclick="sayHello()">Bấm vào đây</button>
+
+    <p id="text"></p>
+  </div>
+
+  <script>
+    function sayHello() {
+      document.getElementById("text").innerHTML =
+        "Bạn vừa bấm nút thành công 🎉";
+    }
+  </script>
+
+</body>
+</html>
